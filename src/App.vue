@@ -2,7 +2,8 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Page1</router-link> |
-      <router-link to="/Page2">Page2</router-link>
+      <router-link to="/Page2">Page2</router-link> |
+      <router-link to="/Page3">Page3</router-link>
     </div>
     <router-view/>
   </div>
