@@ -1,10 +1,11 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Page1</router-link> |
+      <router-link to="/Page1">Page1</router-link> |
       <router-link to="/Page2">Page2</router-link> |
       <router-link to="/Page3">Page3</router-link> |
-      <router-link to="/Page4">Page4</router-link>
+      <router-link to="/Page4">Page4</router-link> |
+      <router-link to="/Page5">Page5</router-link>
     </div>
     <router-view/>
   </div>
@@ -26,7 +27,7 @@
     font-weight: bold;
     color: #2c3e50;
 
-    &.router-link-exact-active {
+    &.router-link-active {
       color: #42b983;
     }
   }

@@ -5,7 +5,7 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path: '/Page1',
     name: 'Page1',
     component: () => import('../views/Page1.vue')
   },
@@ -24,6 +24,19 @@ const routes = [
     name: 'Page4',
     component: () => import('../views/Page4.vue')
   },
+  {
+    path: '/Page5/:year/:month',
+    name: 'Page5',
+    component: () => import('../views/Page5.vue')
+  },
+  {
+    path: '/Page5',
+    redirect: `/Page5/${new Date().getFullYear()}/${new Date().getMonth() + 1}`,
+  },
+  
+  
+  
+  
 ]
 
 const router = new VueRouter({
@@ -31,5 +44,6 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes
 })
+
 
 export default router
